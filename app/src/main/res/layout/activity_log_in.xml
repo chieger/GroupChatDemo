@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.charleshieger.groupchatdemo.LogInActivity"
+    android:background="#32936F">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/group_chat_logo_4"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etUsernameField"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etUsernameField"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:hint="Username"
+        android:paddingLeft="10dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPasswordField"
+        android:layout_below="@+id/etUsernameField"
+        android:layout_alignStart="@+id/etUsernameField"
+        android:background="#ffffff"
+        android:hint="Password"
+        android:fontFamily="sans"
+        android:textSize="20sp"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/etPasswordField"
+        android:onClick="onLogIn"
+        android:background="#2274A5"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/button2"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/etPasswordField"
+        android:onClick="onSignUp"
+        android:background="#287357"
+        android:textColor="#ffffff" />
+</RelativeLayout>
